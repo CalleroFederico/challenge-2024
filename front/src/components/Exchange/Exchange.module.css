@@ -1,0 +1,36 @@
+.card {
+    min-width: 300px;
+    margin-top: 32px;
+    background-color: ghostwhite !important;
+}
+
+.form-display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-width {
+    max-width: 50%;
+}
+
+.button-display {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text-field {
+    margin: 0 0 16px 0 !important;
+    background-color: white;
+    text-align: center;
+}
+
+.buttons-align {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text {
+    margin: 0 0 16px 0;
+}

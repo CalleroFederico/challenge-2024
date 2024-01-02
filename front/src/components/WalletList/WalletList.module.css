@@ -1,0 +1,15 @@
+.list {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    margin: 0px;
+    padding: 16px;
+}
+
+.sort {
+    margin: 0 0 16px 0;
+}

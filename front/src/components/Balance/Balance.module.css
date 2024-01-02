@@ -1,0 +1,10 @@
+.form-container {
+    width: 20%;
+    margin-left: 16px;
+}
+
+.text {
+    text-align: left;
+    margin: 0px;
+    padding: 16px 0 16px 16px;
+}

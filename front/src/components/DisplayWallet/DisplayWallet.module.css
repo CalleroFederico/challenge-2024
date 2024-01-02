@@ -1,0 +1,25 @@
+.text {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.card-warning {
+    border-radius: 0 0 20px 20px !important;
+    background-color: ghostwhite !important;
+}
+
+.card {
+    border-radius: 20px !important;
+    background-color: ghostwhite !important;
+}
+
+.flex {
+    margin: 0px;
+    padding: 16px 16px 16px 16px;
+    display: flex;
+}
+
+.container {
+    width: fit-content;
+    margin-top: 16px;
+}

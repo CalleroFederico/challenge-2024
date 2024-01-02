@@ -1,0 +1,15 @@
+.card {
+    background-color: ghostwhite !important;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    margin: 32px 0 0 0;
+}
+
+.text-field {
+    background-color: white;
+}
+
+.button{
+    margin-top: 16px !important;
+}
