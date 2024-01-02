@@ -34,7 +34,8 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const wallets = await getWallets();
+      let wallets = await getWallets();
+      wallets = wallets.list;
       dispatch({ type: 'UPDATE_WALLETS', payload: wallets });
       const rates = await getRates();
       dispatch({ type: 'UPDATE_EXCHANGE_ETHUSD', payload: rates.USD });
@@ -48,8 +49,18 @@ function App() {
         <WalletsDataDispatchContext.Provider value={dispatch}>
           <div className="App">
             <header className="header">
-              <a href="https://github.com/CalleroFederico/challenge-2024.git" target="_blank">
+              <a
+                href="https://github.com/CalleroFederico/challenge-2024.git"
+                target="_blank"
+              >
                 <GitHubIcon />
+              </a>
+              <a
+                className="swagger"
+                href="http://157.245.3.7/api"
+                target="_blank"
+              >
+                Swagger
               </a>
             </header>
             <div className="main">

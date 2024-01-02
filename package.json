@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/sequelize": "^10.0.0",
     "@nestjs/serve-static": "^4.0.0",
+    "@nestjs/swagger": "^7.1.17",
     "@sequelize/core": "^7.0.0-alpha.29",
     "axios": "^1.6.3",
     "class-transformer": "^0.5.1",

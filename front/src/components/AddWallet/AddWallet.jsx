@@ -27,7 +27,8 @@ function AddWallet() {
       return;
     }
     await addWallet(address);
-    const wallets = await getWallets();
+    let wallets = await getWallets();
+    wallets = wallets.list;
     dispatch({ type: 'UPDATE_WALLETS', payload: wallets });
   };
 

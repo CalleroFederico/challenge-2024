@@ -25,13 +25,13 @@ export class AppService {
   };
 
   async getBalance(id: string): Promise<any> {
-    const url = `https://api.etherscan.io/api?module=account&action=balance&address=${id}&tag=latest&apikey=NSZCD6S4TKVWRS13PMQFMVTNP6H7NAGHUY`;
+    const url = `https://api.etherscan.io/api?module=account&action=balance&address=${id}&tag=latest&apikey=${process.env.API_KEY}`;
     const balance = await this.callHttp(url);
     return { balance: balance.result };
   }
 
   async getFirstTx(id: string): Promise<any> {
-    const url = `https://api.etherscan.io/api?module=account&action=txlist&address=${id}&startblock=0&endblock=99999999&sort=asc&apikey=NSZCD6S4TKVWRS13PMQFMVTNP6H7NAGHUY`;
+    const url = `https://api.etherscan.io/api?module=account&action=txlist&address=${id}&startblock=0&endblock=99999999&sort=asc&apikey=${process.env.API_KEY}`;
     const txList = await this.callHttp(url);
     return { firstTx: txList?.result?.[0]?.timeStamp };
   }

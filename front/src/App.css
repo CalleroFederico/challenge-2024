@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.swagger {
+  text-decoration: none;
+  margin: 0 16px;
+}
+
 .header {
   display: flex;
   margin: 16px 0 0 16px;

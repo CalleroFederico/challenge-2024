@@ -10,7 +10,8 @@ function Favorite({ isFavorite, address }) {
       <Rating
         onClick={async () => {
           await toogleFavorite(address);
-          const wallets = await getWallets();
+          let wallets = await getWallets();
+          wallets = wallets.list;
           dispatch({ type: 'UPDATE_WALLETS', payload: wallets });
         }}
         value={isFavorite ? 1 : 0}
