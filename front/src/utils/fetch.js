@@ -1,5 +1,5 @@
 const getWallets = async () => {
-  return fetch('http://157.245.3.7:3000/api/all', {
+  return fetch('http://157.245.3.7/api/all', {
     method: 'GET',
   }).then((response) => {
     return response.json();
@@ -7,7 +7,7 @@ const getWallets = async () => {
 };
 
 const addWallet = async (address) => {
-  return fetch('http://157.245.3.7:3000/api/create', {
+  return fetch('http://157.245.3.7/api/create', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -18,13 +18,13 @@ const addWallet = async (address) => {
 };
 
 const toogleFavorite = async (address) => {
-  return fetch(`http://157.245.3.7:3000/api/favorite/${address}`, {
+  return fetch(`http://157.245.3.7/api/favorite/${address}`, {
     method: 'PATCH',
   });
 };
 
 const getRates = async () => {
-  return fetch(`http://157.245.3.7:3000/api/rate/ETH/USD,EUR`, {
+  return fetch(`http://157.245.3.7/api/rate/ETH/USD,EUR`, {
     method: 'GET',
   }).then((response) => {
     return response.json();
