@@ -48,7 +48,7 @@ function App() {
         <WalletsDataDispatchContext.Provider value={dispatch}>
           <div className="App">
             <header className="header">
-              <a href="https://www.educative.io/" target="_blank">
+              <a href="https://github.com/CalleroFederico/challenge-2024.git" target="_blank">
                 <GitHubIcon />
               </a>
             </header>

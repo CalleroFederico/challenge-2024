@@ -33,7 +33,7 @@ export class WalletService {
 
   async remove(address: any) {
     await Wallet.sync();
-    const wallet = await this.walletRepository.findOne(address);
+    const wallet = await this.walletRepository.findOne({ where: { address } });
     return await wallet.destroy();
   }
 }
